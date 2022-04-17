@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className='grid lg:grid-cols-2'>
             <div>
-                <img src={banner} alt="" />
+                <img src={banner} alt="banner" />
             </div>
             <div className='bg-green-500 space-y-5 p-6 relative'>
                 <div className='text-5xl text-white text-center space-y-4'>

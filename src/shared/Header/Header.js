@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <header className="text-gray-600 body-font bg-green-700">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        < div className = "container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" >
             <Link className = "flex title-font text-2xl font-medium items-center text-white mb-4 md:mb-0 cursor-pointer" to="/home" >
             Nutrtion by Ameera
             </Link>
