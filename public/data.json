@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Individual Nutrition",
+        "description": "From wellness to fighting disease, I help you achieve every health goal. I tailor an individualized plan based on lifestyle, health and preferences. This research-based approach is customized for you.",
+        "price": 7000,
+        "image": "https://i.postimg.cc/qRJ65MKS/weight-management.png"
+    },
+    {
+        "id": 2,
+        "title": "Family Nutrition",
+        "description": "Family health is paramount to a happy life. I prioritize the life and healthiness of your loved ones with nourishing strategies to achieve all of your family is health goals. This plan is for wellness and weight management only; not families that have chronic diseases.",
+        "price": 15000,
+        "image": "https://i.postimg.cc/wvwR88cv/diet-plan.png"
+    },
+    {
+        "id": 3,
+        "title": "Counseling",
+        "description": "Virtual Sessions with Evidence-Based Solutions. I provide you researched, practical advice on lifestyle modification through nutrition and healthy habits.",
+        "price": 5000,
+        "image": "https://i.postimg.cc/Y0jGtnbx/counseling.png"
+    }
+]

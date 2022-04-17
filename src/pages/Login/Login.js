@@ -24,15 +24,6 @@ const Login = () => {
 				<input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" required/>
 				<p className="text-red-500 text-xs italic">Please choose a password.</p>
 				</div>
-				<div className=" mb-6">
-				<div className="md:w-1/3"></div>
-				<label className="md:w-2/3 block text-gray-500 font-bold">
-				<input className="mr-2 leading-tight" type="checkbox"/>
-				<span className="text-sm">
-					Already Registered?
-				</span>
-				</label>
-				</div>
 				<div className="flex items-center justify-between">
 				<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
 					Login
@@ -42,9 +33,6 @@ const Login = () => {
 				</a>
 				</div>
 			</form>
-			<p className="text-center text-gray-500 text-xs">
-				&copy;{new Date().getFullYear()} Nutrition by Ameera. All rights reserved.
-			</p>
 		</div>
 		</div>
     );

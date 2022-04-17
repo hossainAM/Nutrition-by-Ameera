@@ -1,9 +1,21 @@
 import React from 'react';
+import banner from '../../images/cover-photo.png'
 
 const Banner = () => {
     return (
-        <div>
-            <h2>This is banner section</h2>
+        <div className='grid lg:grid-cols-2'>
+            <div>
+                <img src={banner} alt="" />
+            </div>
+            <div className='bg-green-500 space-y-5 p-6 relative'>
+                <div className='text-5xl text-white text-center space-y-4'>
+                    <h1>Change the</h1>
+                    <h1>Way You Think</h1>
+                    <h1>About Food</h1>
+                </div>
+                <p className='text-2xl text-white text-center m-6'>Nutrition by Ameera is a wellness nutrition private practice specializing in pediatrics, adult and family nutrition. From digestive health to eating disorders to daily nutrition, Nutrition by Ameera walks alongside you in your pursuit of total health. Set up an appointment today!</p>
+                <button className='my-24 px-4 py-1 bg-green-100 border border-green-200 rounded-full text-sm font-semibold hover:bg-green-200 hover:text-black hover:border-transparent focus:outline-none absolute bottom-1/4  left-96'>Set Up an Appointment</button>
+            </div>
         </div>
     );
 };

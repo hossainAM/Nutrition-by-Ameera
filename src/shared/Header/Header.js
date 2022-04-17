@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,12 +9,12 @@ const Header = () => {
             Nutrtion by Ameera
             </Link>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <Link className = "mr-5 text-white text-xl  hover:text-yellow-200 cursor-pointer" to="/"> Home </Link>
-            <Link className = "mr-5 text-white text-xl hover:text-yellow-200 cursor-pointer" to="/blog"> Blog </Link>
-            <Link className = "mr-5 text-white text-xl hover:text-yellow-200 cursor-pointer" to="/about"> About Me </Link>
+            <NavLink style={({ isActive }) => isActive ? {color: 'yellow'} : undefined} className = "mr-5 text-white text-xl  hover:text-yellow-200 cursor-pointer" to="/"> Home </NavLink>
+            <NavLink style={({ isActive }) => isActive ? {color: 'yellow'} : undefined} className = "mr-5 text-white text-xl hover:text-yellow-200 cursor-pointer" to="/blog"> Blogs </NavLink>
+            <NavLink style={({ isActive }) => isActive ? {color: 'yellow'} : undefined} className = "mr-5 text-white text-xl hover:text-yellow-200 cursor-pointer" to="/about"> About Me </NavLink>
             </nav>
-            <Link className = "inline-flex items-center text-xl bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer" to="/login"> Login
-            </Link>
+            <NavLink style={({ isActive }) => isActive ? {color: 'red'} : undefined} className = "inline-flex items-center text-xl bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer" to="/login"> Login
+            </NavLink>
         </div>
     </header>
     );
