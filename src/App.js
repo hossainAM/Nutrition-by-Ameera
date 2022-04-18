@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout/Checkout'
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails'
 import Signup from './pages/Login/Signup'
 import RequireAuth from './pages/Login/RequireAuth'
+import ContactUs from './pages/ContactUs/ContactUs'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/checkout" element={<RequireAuth>
           <Checkout/>
         </RequireAuth>}/>
+        <Route path="/contactus" element={<ContactUs/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </>

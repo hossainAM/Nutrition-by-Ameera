@@ -9,11 +9,15 @@ const ServiceDetails = () => {
         <Header></Header>
         <div className='flex justify-center mt-80'>
             <Link to="/checkout">
-                <button className='px-4 py-1 bg-green-100 border border-green-200 rounded-full text-sm font-semibold hover:bg-green-200 hover:text-black hover:border-transparent focus:outline-none'>Checkout</button>
+                <button className='px-4 py-1 bg-green-100 border border-green-200 rounded-full text-sm font-semibold hover:bg-green-200 hover:text-black hover:border-transparent focus:outline-none'>Proceed Checkout</button>
             </Link>
-        </div>
+        </div>   
         </>
     );
 };
 
 export default ServiceDetails;
+
+            
+
+        
