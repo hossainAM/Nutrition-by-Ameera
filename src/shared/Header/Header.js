@@ -15,7 +15,7 @@ const Header = () => {
             </nav>
             <NavLink style={({ isActive }) => isActive ? {color: 'red'} : undefined} className = "inline-flex items-center text-xl bg-gray-100 border-0 py-1 px-3 mr-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer" to="/login"> Login
             </NavLink>
-            <NavLink style={({ isActive }) => isActive ? {color: 'red'} : undefined} className = "inline-flex items-center text-xl bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer" to="/login"> Sign Up
+            <NavLink style={({ isActive }) => isActive ? {color: 'red'} : undefined} className = "inline-flex items-center text-xl bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer" to="/signup"> Sign Up
             </NavLink>
         </div>
     </header>

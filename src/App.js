@@ -9,6 +9,8 @@ import NotFound from './pages/NotFound/NotFound'
 import Footer from './shared/Footer/Footer'
 import Checkout from './pages/Checkout/Checkout'
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails'
+import Signup from './pages/Login/Signup'
+import RequireAuth from './pages/Login/RequireAuth'
 
 const App = () => {
   return (
@@ -20,8 +22,11 @@ const App = () => {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/service/:serviceId" element={<ServiceDetails/>}/>
-        <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/checkout" element={<RequireAuth>
+          <Checkout/>
+        </RequireAuth>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
       <Footer></Footer>
