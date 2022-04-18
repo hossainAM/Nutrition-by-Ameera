@@ -3,6 +3,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import toast, { Toaster } from 'react-hot-toast';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
 	const emailRef = useRef('');
@@ -60,11 +61,6 @@ const Login = () => {
     return (
         <div className='bg-gray-400 h-screen  overflow-y-hidden'>
 		<h1 className='text-3xl text-center text-red-700 my-6'>Please Login</h1>
-		<div className='flex justify-center mb-3'>
-			<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-			Google Sign in
-		</button>
-		</div>
 		<div className="w-full max-w-xs mx-auto">
 			<form onSubmit={handleSignIn} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 				<div className="mb-4">
@@ -90,6 +86,7 @@ const Login = () => {
 				<p className='text-red-500 text-center mt-2'>{errorElement}</p>
 				<Toaster/>
 			</form>
+				<SocialLogin></SocialLogin>
 		</div>
 		</div>
     );
