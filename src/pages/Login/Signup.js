@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Footer from '../../shared/Footer/Footer';
+import Header from '../../shared/Header/Header';
 
 const Signup = () => {
 	const nameRef = useRef('');
@@ -43,6 +45,8 @@ const Signup = () => {
           navigate('/home')
 	}
     return (
+		<>
+		<Header></Header>
         <div className='bg-gray-400 h-screen  overflow-y-hidden'>
 		<h1 className='text-3xl text-center text-red-700 my-6'>Sign Up</h1>
 		<div className='flex justify-center mb-3'>
@@ -81,13 +85,12 @@ const Signup = () => {
 				<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
 					Sign Up
 				</button>
-				<a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-					Forgot Password?
-				</a>
 				</div>
 			</form>
 		</div>
 		</div>
+		<Footer></Footer>
+		</>
     );
 };
 

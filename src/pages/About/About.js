@@ -1,7 +1,11 @@
 import React from 'react';
+import Footer from '../../shared/Footer/Footer';
+import Header from '../../shared/Header/Header';
 
 const About = () => {
     return (
+        <>
+        <Header></Header>
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
                 <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="aboutme" src="https://i.postimg.cc/hvrD8wtd/about-me.png"/>
@@ -11,6 +15,8 @@ const About = () => {
                 </div>
             </div>
         </section>
+        <Footer></Footer>
+        </>
     );
 };
 

@@ -1,7 +1,11 @@
 import React from 'react';
+import Footer from '../../shared/Footer/Footer';
+import Header from '../../shared/Header/Header';
 
 const Blog = () => {
     return (
+    <>
+    <Header></Header>
        <section className = "text-gray-600 body-font overflow-hidden">
         <div className = "container px-5 py-24 mx-auto">
             <h1 className='text-4xl text-green-500 text-bold'>Frequently Asked Questions</h1>
@@ -24,7 +28,9 @@ const Blog = () => {
                 </div>
             </div>
         </div>
-    </section>
+       </section>
+       <Footer></Footer>
+    </>
     );
 };
 

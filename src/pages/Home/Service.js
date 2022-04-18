@@ -9,7 +9,8 @@ const Service = ({service}) => {
         navigate(`/service/${id}`)
     }
     return (
-         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <>
+         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden transform hover:scale-105 duration-500">
                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={image} alt="services"/>
                 <div className="p-6">
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{title}</h2>
@@ -21,6 +22,7 @@ const Service = ({service}) => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

@@ -4,6 +4,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import toast, { Toaster } from 'react-hot-toast';
 import SocialLogin from './SocialLogin';
+import Header from '../../shared/Header/Header';
+import Footer from '../../shared/Footer/Footer';
 
 const Login = () => {
 	const emailRef = useRef('');
@@ -22,7 +24,7 @@ const Login = () => {
 
 	let from = location.state?.from?.pathname || "/";
 
-	const handleSignIn = (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		const email = emailRef.current.value;
 		const password = passwordRef.current.value;
@@ -59,10 +61,12 @@ const Login = () => {
     }
 
     return (
+		<>
+		<Header></Header>
         <div className='bg-gray-400 h-screen  overflow-y-hidden'>
 		<h1 className='text-3xl text-center text-red-700 my-6'>Please Login</h1>
 		<div className="w-full max-w-xs mx-auto">
-			<form onSubmit={handleSignIn} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+			<form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 				<div className="mb-4">
 				<label className="block text-gray-700 text-sm font-bold mb-2" for="email">
 					Email
@@ -89,6 +93,8 @@ const Login = () => {
 				<SocialLogin></SocialLogin>
 		</div>
 		</div>
+		<Footer></Footer>
+		</>
     );
 };
 

@@ -2,8 +2,8 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div>
-            <h2>404, Page not found</h2>
+        <div className='flex justify-center mt-8'>
+            <img src="https://i.postimg.cc/pdY5XcR7/404.png" alt="" />
         </div>
     );
 };
