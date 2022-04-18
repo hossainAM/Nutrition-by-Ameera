@@ -16,7 +16,7 @@ const Service = ({service}) => {
                     <p className="title-font text-lg font-medium text-gray-900 mb-3">BDT {price}</p>
                     <p className="leading-relaxed mb-3">{description}</p>
                     <div className="flex items-center flex-wrap ">
-                    < button onClick={() => handleServiceDetail(id)} className = "px-4 py-1 bg-green-100 border border-green-200 rounded-full text-sm font-semibold hover:bg-green-200 hover:text-black hover:border-transparent focus:outline-none cursor-pointer" > Book Now
+                    <button onClick={() => handleServiceDetail(id)} className = "px-4 py-1 bg-green-100 border border-green-200 rounded-full text-sm font-semibold hover:bg-green-200 hover:text-black hover:border-transparent focus:outline-none cursor-pointer" > Book Now
                     </button>
                 </div>
             </div>
